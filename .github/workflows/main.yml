@@ -1,4 +1,4 @@
-name: Android AAB Build
+name: Android APK Build
 
 on:
   push:
@@ -22,12 +22,12 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
 
-    - name: Build with Gradle (AAB)
-      run: ./gradlew bundleDebug
+    - name: Build with Gradle (APK)
+      run: ./gradlew assembleDebug
 
-    - name: Upload AAB File
+    - name: Upload APK File
       uses: actions/upload-artifact@v4
       with:
-        name: protask-app-bundle
-        path: app/build/outputs/bundle/debug/app-debug.aab
+        name: protask-app-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
         
