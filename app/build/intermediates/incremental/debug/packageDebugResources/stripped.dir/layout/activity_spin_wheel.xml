@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_neon"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/spinRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <include layout="@layout/view_top_header" />
+
+        <TextView
+            style="@style/ProTaskScreenTitle"
+            android:layout_marginTop="20dp"
+            android:text="Spin Wheel" />
+
+        <TextView
+            style="@style/ProTaskBodyText"
+            android:layout_marginTop="6dp"
+            android:text="Spin the premium wheel and collect instant wallet rewards." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvSpinLimit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="15 spins left today"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSoundState"
+                android:layout_width="104dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_blue_green_pill"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="HAPTICS ON"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnExtraSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_glass_card"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Watch Ad for +5 Spins"
+            android:textColor="#2DD4BF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/wheelStage"
+            android:layout_width="match_parent"
+            android:layout_height="388dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:elevation="24dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/particleOne"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_particle_dot" />
+
+            <TextView
+                android:id="@+id/particleTwo"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/bg_particle_dot" />
+
+            <TextView
+                android:id="@+id/particleThree"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="42dp"
+                android:background="@drawable/bg_particle_dot" />
+
+            <TextView
+                android:id="@+id/particleFour"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="72dp"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/bg_particle_dot" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_neon_ring" />
+
+            <com.example.myempty.protask.SpinWheelView
+                android:id="@+id/spinWheelView"
+                android:layout_width="248dp"
+                android:layout_height="248dp"
+                android:layout_gravity="center"
+                android:elevation="12dp"
+                android:translationZ="6dp" />
+
+            <TextView
+                android:id="@+id/btnSpin"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_circle_glow"
+                android:clickable="true"
+                android:elevation="22dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="SPIN"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvSpinResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="Tap spin to earn points"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/ProTaskSectionTitle"
+            android:layout_marginTop="24dp"
+            android:text="Spin History" />
+
+        <LinearLayout
+            android:id="@+id/listSpinHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_glass_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvSpinHistory"
+                style="@style/ProTaskBodyText"
+                android:text="No spins yet today" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

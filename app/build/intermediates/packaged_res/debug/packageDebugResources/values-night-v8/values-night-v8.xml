@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#6B8DFF</color>
+    <color name="accent_gold">#F5BC45</color>
+    <color name="accent_green">#22C58C</color>
+    <color name="accent_red">#FF6670</color>
+    <color name="app_bg">#171B24</color>
+    <color name="input_bg">#252C39</color>
+    <color name="shadow_dark">#0B0D12</color>
+    <color name="shadow_light">#303846</color>
+    <color name="surface_neu">#1F2531</color>
+    <color name="surface_neu_pressed">#181D27</color>
+    <color name="text_primary">#F3F6FA</color>
+    <color name="text_secondary">#A5AFBF</color>
+    <style name="AppTheme" parent="Base.AppTheme"/>
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:fontFamily">sans</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:statusBarColor">@color/app_bg</item>
+    <item name="android:navigationBarColor">@color/app_bg</item>
+    <item name="android:colorAccent">@color/accent_blue</item>
+    <item name="colorPrimary">@color/accent_blue</item>
+    <item name="colorOnPrimary">@android:color/white</item>
+    <item name="colorSurface">@color/surface_neu</item>
+    <item name="colorOnSurface">@color/text_primary</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+    <style name="ProTaskDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="colorSurface">@color/protask_card</item>
+    <item name="android:textColorPrimary">@color/protask_text</item>
+    <item name="android:textColorSecondary">#AEB6D9</item>
+    <item name="colorPrimary">@color/protask_primary</item>
+  </style>
+</resources>

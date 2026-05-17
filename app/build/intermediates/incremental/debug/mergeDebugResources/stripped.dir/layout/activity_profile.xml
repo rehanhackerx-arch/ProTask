@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_neon"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/profileRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <include layout="@layout/view_top_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:elevation="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:background="@drawable/bg_profile_circle"
+                android:contentDescription="Profile image"
+                android:padding="26dp"
+                android:src="@drawable/ic_profile_avatar" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="ProTask Member"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="email@example.com"
+                android:textColor="#B0AFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvLevelBadge"
+                android:layout_width="132dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_blue_green_pill"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Starter"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnEditProfile"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_neon_button_rounded"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_glass_card"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="#E8E6FF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/ProTaskSectionTitle"
+            android:layout_marginTop="24dp"
+            android:text="Wallet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_wallet_glow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:text="Wallet Balance" />
+
+                <TextView
+                    android:id="@+id/tvProfileRewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="0 pts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnWithdraw"
+                android:layout_width="122dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_neon_button_rounded"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Withdraw"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvProfileScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Total score" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvProfileTasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Tasks" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvProfileSpins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0/15"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Spins" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvProfileStreak"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_glass_card_strong"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Daily streak: 1 day"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/ProTaskSectionTitle"
+            android:layout_marginTop="24dp"
+            android:text="Withdraw History" />
+
+        <LinearLayout
+            android:id="@+id/withdrawHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                style="@style/ProTaskBodyText"
+                android:text="No withdrawals yet. Earn points and request your first payout." />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

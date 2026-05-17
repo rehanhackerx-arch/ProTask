@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomNav"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_bottom_nav"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="24dp"
+    android:padding="7dp">
+
+    <View
+        android:id="@+id/navGlow"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_gravity="start|center_vertical"
+        android:alpha="0.85"
+        android:background="@drawable/bg_nav_aura" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            style="@style/BottomNavItem">
+
+            <ImageView
+                android:id="@+id/navHomeIcon"
+                style="@style/BottomNavIcon"
+                android:src="@drawable/ic_nav_home" />
+
+            <TextView
+                android:id="@+id/navHomeLabel"
+                style="@style/BottomNavLabel"
+                android:text="Home" />
+
+            <View
+                android:id="@+id/navHomeIndicator"
+                style="@style/BottomNavIndicator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navWallet"
+            style="@style/BottomNavItem">
+
+            <ImageView
+                android:id="@+id/navWalletIcon"
+                style="@style/BottomNavIcon"
+                android:src="@drawable/ic_nav_wallet" />
+
+            <TextView
+                android:id="@+id/navWalletLabel"
+                style="@style/BottomNavLabel"
+                android:text="Wallet" />
+
+            <View
+                android:id="@+id/navWalletIndicator"
+                style="@style/BottomNavIndicator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navWithdraw"
+            style="@style/BottomNavItem">
+
+            <ImageView
+                android:id="@+id/navWithdrawIcon"
+                style="@style/BottomNavIcon"
+                android:src="@drawable/ic_nav_withdraw" />
+
+            <TextView
+                android:id="@+id/navWithdrawLabel"
+                style="@style/BottomNavLabel"
+                android:text="Withdraw" />
+
+            <View
+                android:id="@+id/navWithdrawIndicator"
+                style="@style/BottomNavIndicator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navRefer"
+            style="@style/BottomNavItem">
+
+            <ImageView
+                android:id="@+id/navReferIcon"
+                style="@style/BottomNavIcon"
+                android:src="@drawable/ic_nav_refer" />
+
+            <TextView
+                android:id="@+id/navReferLabel"
+                style="@style/BottomNavLabel"
+                android:text="Refer" />
+
+            <View
+                android:id="@+id/navReferIndicator"
+                style="@style/BottomNavIndicator" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

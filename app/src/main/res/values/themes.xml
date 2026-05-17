@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:fontFamily">sans</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:statusBarColor">@color/protask_bg</item>
+    <item name="android:navigationBarColor">@color/protask_bg</item>
+    <item name="android:colorAccent">@color/protask_glow</item>
+    <item name="colorPrimary">@color/protask_primary</item>
+    <item name="colorOnPrimary">@android:color/white</item>
+    <item name="colorSurface">@color/protask_card</item>
+    <item name="colorOnSurface">@color/protask_text</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme" parent="Base.AppTheme" />
+
+  <style name="ProTaskDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="colorSurface">@color/protask_card</item>
+    <item name="android:textColorPrimary">@color/protask_text</item>
+    <item name="android:textColorSecondary">#AEB6D9</item>
+    <item name="colorPrimary">@color/protask_primary</item>
+  </style>
+</resources>

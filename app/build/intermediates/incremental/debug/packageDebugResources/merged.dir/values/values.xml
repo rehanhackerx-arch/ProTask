@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#4778FF</color>
+    <color name="accent_gold">#F4B740</color>
+    <color name="accent_green">#19B47B</color>
+    <color name="accent_red">#E9505A</color>
+    <color name="app_bg">#E9EEF5</color>
+    <color name="input_bg">#F3F6FA</color>
+    <color name="protask_bg">#0B1020</color>
+    <color name="protask_blue">#5B8CFF</color>
+    <color name="protask_card">#151A2E</color>
+    <color name="protask_glow">#A855F7</color>
+    <color name="protask_green">#2DD4BF</color>
+    <color name="protask_primary">#7B2CFF</color>
+    <color name="protask_text">#FFFFFF</color>
+    <color name="shadow_dark">#AAB4C2</color>
+    <color name="shadow_light">#FFFFFF</color>
+    <color name="surface_neu">#E9EEF5</color>
+    <color name="surface_neu_pressed">#DDE4EE</color>
+    <color name="text_primary">#172033</color>
+    <color name="text_secondary">#6B7486</color>
+    <string name="app_name">ProTask</string>
+    <string name="back">Back</string>
+    <string name="default_web_client_id" translatable="false">625119739748-2shurcorldg92a4tb6glu2s3lmdm9u5k.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">625119739748</string>
+    <string name="google_api_key" translatable="false">AIzaSyBO8IiRhgLe8OS7J3tnmc0HOsAq9newfbE</string>
+    <string name="google_app_id" translatable="false">1:625119739748:android:b1df58d5e7102088024471</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBO8IiRhgLe8OS7J3tnmc0HOsAq9newfbE</string>
+    <string name="google_login_config_missing">Add google-services.json with a Web client ID, then rebuild to enable Google Sign-In.</string>
+    <string name="google_storage_bucket" translatable="false">pro-task-6259a.firebasestorage.app</string>
+    <string name="header_action">Header action</string>
+    <string name="project_id" translatable="false">pro-task-6259a</string>
+    <style name="AppTheme" parent="Base.AppTheme"/>
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:fontFamily">sans</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:statusBarColor">@color/protask_bg</item>
+    <item name="android:navigationBarColor">@color/protask_bg</item>
+    <item name="android:colorAccent">@color/protask_glow</item>
+    <item name="colorPrimary">@color/protask_primary</item>
+    <item name="colorOnPrimary">@android:color/white</item>
+    <item name="colorSurface">@color/protask_card</item>
+    <item name="colorOnSurface">@color/protask_text</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+    <style name="BottomNavIcon">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:tint">@color/nav_item_icon_tint</item>
+    </style>
+    <style name="BottomNavIndicator">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/bg_nav_indicator</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="BottomNavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:background">@drawable/bg_nav_item</item>
+        <item name="android:clickable">true</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="BottomNavLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/nav_item_text_tint</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="DashboardNeuCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_neumorphic_card</item>
+        <item name="android:clickable">true</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:translationZ">5dp</item>
+    </style>
+    <style name="PrimaryNeuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_accent_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:translationZ">4dp</item>
+    </style>
+    <style name="ProTaskBodyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AEB6D9</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="ProTaskDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="colorSurface">@color/protask_card</item>
+    <item name="android:textColorPrimary">@color/protask_text</item>
+    <item name="android:textColorSecondary">#AEB6D9</item>
+    <item name="colorPrimary">@color/protask_primary</item>
+  </style>
+    <style name="ProTaskMetricCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_glass_card</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">14dp</item>
+    </style>
+    <style name="ProTaskNeonButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:background">@drawable/bg_neon_button_rounded</item>
+        <item name="android:clickable">true</item>
+        <item name="android:elevation">16dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProTaskScreenTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProTaskSectionTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProfileStatText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="RewardDayCard">
+        <item name="android:layout_width">92dp</item>
+        <item name="android:layout_height">82dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:background">@drawable/bg_reward_card</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ScreenTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SecondaryNeuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_neumorphic_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:translationZ">4dp</item>
+    </style>
+</resources>

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/layout_bottom_nav.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/layout_bottom_nav.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_refer_earn.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_refer_earn.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_daily_bonus.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_daily_bonus.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_main.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_withdraw.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_withdraw.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_captcha.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_captcha.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/item_task_captcha.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/item_task_captcha.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/item_task_spin_wheel.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/item_task_spin_wheel.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/item_task_watch_ads.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/item_task_watch_ads.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/item_task_refer.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/item_task_refer.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_watch_ads.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_watch_ads.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_spin_wheel.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_spin_wheel.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_settings.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_wallet.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_wallet.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/item_task_daily_bonus.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/item_task_daily_bonus.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/view_top_header.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/view_top_header.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_profile.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_login.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.myempty.protask.app-mergeDebugResources-62:/layout/activity_splash.xml",
+        "source": "com.example.myempty.protask.app-main-65:/layout/activity_splash.xml"
+    }
+]

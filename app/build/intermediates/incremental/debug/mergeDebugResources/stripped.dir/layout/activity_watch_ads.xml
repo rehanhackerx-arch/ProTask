@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_neon"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/watchRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <include layout="@layout/view_top_header" />
+
+        <TextView
+            style="@style/ProTaskScreenTitle"
+            android:layout_marginTop="20dp"
+            android:text="Watch Ads" />
+
+        <TextView
+            style="@style/ProTaskBodyText"
+            android:layout_marginTop="6dp"
+            android:text="Complete rewarded videos and watch your wallet update instantly." />
+
+        <LinearLayout
+            android:id="@+id/cardAdReward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:elevation="22dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <FrameLayout
+                android:layout_width="118dp"
+                android:layout_height="118dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_neon_ring" />
+
+                <ImageView
+                    android:id="@+id/ivRewardIcon"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_glow"
+                    android:contentDescription="Rewarded video"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_video_premium" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvRewardAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_blue_green_pill"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="+25 POINTS"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Rewarded Video Boost"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdStatus"
+                style="@style/ProTaskBodyText"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Ready to earn reward points" />
+
+            <ProgressBar
+                android:id="@+id/progressAd"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="22dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bg_progress_track" />
+
+            <TextView
+                android:id="@+id/viewShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_glass_card_disabled"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Premium ad inventory ready"
+                android:textColor="#9FA8D0"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvAdPointsEarned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Points earned" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvPerVideoReward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="+25"
+                    android:textColor="#2DD4BF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Per video" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnWatchAd"
+            style="@style/ProTaskNeonButton"
+            android:layout_marginTop="24dp"
+            android:text="Watch Rewarded Ad"
+            android:translationZ="8dp" />
+    </LinearLayout>
+</ScrollView>

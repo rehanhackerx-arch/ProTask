@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#E9EEF5</color>
+    <color name="surface_neu">#E9EEF5</color>
+    <color name="surface_neu_pressed">#DDE4EE</color>
+    <color name="text_primary">#172033</color>
+    <color name="text_secondary">#6B7486</color>
+    <color name="accent_gold">#F4B740</color>
+    <color name="accent_green">#19B47B</color>
+    <color name="accent_blue">#4778FF</color>
+    <color name="accent_red">#E9505A</color>
+    <color name="shadow_dark">#AAB4C2</color>
+    <color name="shadow_light">#FFFFFF</color>
+    <color name="input_bg">#F3F6FA</color>
+    <color name="protask_bg">#0B1020</color>
+    <color name="protask_card">#151A2E</color>
+    <color name="protask_primary">#7B2CFF</color>
+    <color name="protask_glow">#A855F7</color>
+    <color name="protask_blue">#5B8CFF</color>
+    <color name="protask_green">#2DD4BF</color>
+    <color name="protask_text">#FFFFFF</color>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_neon"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <include layout="@layout/view_top_header" />
+
+        <TextView
+            style="@style/ProTaskScreenTitle"
+            android:layout_marginTop="20dp"
+            android:text="Control Center" />
+
+        <TextView
+            style="@style/ProTaskBodyText"
+            android:layout_marginTop="6dp"
+            android:text="Tune the ProTask experience from one secure neon panel." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/rowNotifications"
+                style="@style/ProTaskSectionTitle"
+                android:background="@drawable/bg_glass_card"
+                android:padding="18dp"
+                android:text="Notifications" />
+
+            <TextView
+                android:id="@+id/rowSecurity"
+                style="@style/ProTaskSectionTitle"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_glass_card"
+                android:padding="18dp"
+                android:text="Security" />
+
+            <TextView
+                android:id="@+id/rowTheme"
+                style="@style/ProTaskSectionTitle"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_glass_card"
+                android:padding="18dp"
+                android:text="Theme" />
+
+            <TextView
+                android:id="@+id/rowSupport"
+                style="@style/ProTaskSectionTitle"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_glass_card"
+                android:padding="18dp"
+                android:text="Support" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

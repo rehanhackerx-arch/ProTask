@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_neon"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/bonusRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <include layout="@layout/view_top_header" />
+
+        <TextView
+            style="@style/ProTaskScreenTitle"
+            android:layout_marginTop="20dp"
+            android:text="Daily Bonus" />
+
+        <TextView
+            style="@style/ProTaskBodyText"
+            android:layout_marginTop="6dp"
+            android:text="Build your streak and unlock bigger daily rewards." />
+
+        <LinearLayout
+            android:id="@+id/timerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:elevation="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <FrameLayout
+                android:layout_width="116dp"
+                android:layout_height="116dp">
+
+                <TextView
+                    android:id="@+id/timerPulse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_neon_ring" />
+
+                <ImageView
+                    android:id="@+id/ivCalendar"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_glow"
+                    android:contentDescription="Daily bonus"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_gift_premium" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvBonusTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Bonus ready"
+                android:textColor="#FFFFFF"
+                android:textSize="31sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/ProTaskBodyText"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Next claim countdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:id="@+id/tvDailyStreakBadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="1x"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Daily streak" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <LinearLayout style="@style/ProTaskMetricCard">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="24h"
+                    android:textColor="#2DD4BF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/ProTaskBodyText"
+                    android:gravity="center"
+                    android:text="Day tracker" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/ProTaskSectionTitle"
+            android:layout_marginTop="24dp"
+            android:text="Reward Progress" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_glass_card_strong"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDailyStreak"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Streak 1 day"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBonusReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+50 pts"
+                    android:textColor="#2DD4BF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBonus"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginTop="16dp"
+                android:max="7"
+                android:progress="1"
+                android:progressDrawable="@drawable/bg_progress_track" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnClaimBonus"
+            style="@style/ProTaskNeonButton"
+            android:layout_marginTop="24dp"
+            android:text="Claim Bonus"
+            android:translationZ="8dp" />
+
+        <TextView
+            android:id="@+id/btnExtraBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_glass_card"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Watch Ad for Extra Points"
+            android:textColor="#2DD4BF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
