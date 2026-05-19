@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:625119739748:android:b1df58d5e7102088024471",
         "android_client_info": {
-          "package_name": "com.example.myempty.protask"
+          "package_name": "com.rehanofficial.protask"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "625119739748-6qi599oc0cb4f8j1hjukisuq7b7p1lu7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.myempty.protask",
+            "package_name": "com.rehanofficial.protask",
             "certificate_hash": "6b24c90263f01e6ee6ba4933d7ebfdb67b8ed527"
           }
         },
@@ -25,7 +25,7 @@
           "client_id": "625119739748-nc6qke66136cuk43ktcub2r8ktk4gef1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.myempty.protask",
+            "package_name": "com.rehanofficial.protask",
             "certificate_hash": "0d3b380b44dc8459d936f6964e6b52a6fde59594"
           }
         },
