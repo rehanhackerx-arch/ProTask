@@ -9,7 +9,7 @@ if (file('google-services.json').exists()) {
 }
 
 android {
-    namespace 'com.rehanofficial.protask'
+    namespace 'com.example.myempty.protask'
     compileSdk 36
 
     defaultConfig {
