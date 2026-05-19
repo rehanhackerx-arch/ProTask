@@ -9,11 +9,11 @@ if (file('google-services.json').exists()) {
 }
 
 android {
-    namespace 'com.example.myempty.protask'
+    namespace 'com.rehanofficial.protask'
     compileSdk 36
 
     defaultConfig {
-        applicationId 'com.example.myempty.protask'
+        applicationId 'com.rehanofficial.protask'
         minSdk 24
         targetSdk 34
         versionCode 1
